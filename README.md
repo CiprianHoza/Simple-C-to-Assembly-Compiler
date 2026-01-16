@@ -1,4 +1,4 @@
-# Simple C-to-Assembly Compiler
+# Simple C-to-Assembly Transpiler
 
 > A minimal compiler developed to understand the fundamentals of code generation, register mapping, and translation from high-level syntax to low-level machine instructions.
 
@@ -18,28 +18,35 @@ The compiler takes source code containing arithmetic and logical operations and 
 
 ## 🛠️ Technologies
 
-* **Language:** C
+* **Language:** C (Standard C11)
 * **Output:** x86 Assembly (Intel Syntax)
-* **Tools:** GCC, Make
+* **Build System:** Make
 
 ## 💻 Installation & Usage
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/simple-c-compiler.git
-cd simple-c-compiler
+git clone [https://github.com/yourusername/simple-c-transpiler.git](https://github.com/yourusername/simple-c-transpiler.git)
+cd simple-c-transpiler
 ```
 
-### 2. Build the compiler
-Compile the source code using GCC:
+### 2. Build the project
+Use the included Makefile to compile the source code:
 ```bash
-gcc main.c -o compiler
+make
 ```
+*Note: The binary will be generated in the project root.*
 
-### 3. Run the compiler
+### 3. Run the transpiler
 Provide a source file as input and define the output file:
 ```bash
-./compiler input.txt output.asm
+./transpiler input.txt output.asm
+```
+
+### 4. Clean build files (Optional)
+To remove object files and the executable:
+```bash
+make clean
 ```
 
 ## 📝 Example
