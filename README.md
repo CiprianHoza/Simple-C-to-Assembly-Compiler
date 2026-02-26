@@ -2,13 +2,13 @@
 
 > A minimal compiler developed to understand the fundamentals of code generation, register mapping, and translation from high-level syntax to low-level machine instructions.
 
-## 📖 Overview
+## Overview
 
 This project is a lightweight compiler built in **C** that translates a subset of C-like syntax into x86 Assembly instructions. It was developed to gain a deeper understanding of CPU instruction behavior, memory management, and the compilation pipeline.
 
 The compiler takes source code containing arithmetic and logical operations and generates valid assembly code that maps variables to CPU registers (EAX, EBX, ECX, EDX).
 
-## 🚀 Features
+## Features
 
 * **Arithmetic Operations:** Supports basic math instructions (`ADD`, `SUB`, `MUL`, `DIV`).
 * **Logical & Control Flow:** Handles comparisons and jumps (`JMP`, conditional branches).
@@ -16,13 +16,13 @@ The compiler takes source code containing arithmetic and logical operations and 
 * **Assignment handling:** Translates variable assignments into `MOV` instructions.
 * **Minimal Syntax Support:** Optimized for educational purposes, focusing on core compilation concepts.
 
-## 🛠️ Technologies
+## Technologies
 
 * **Language:** C (Standard C11)
 * **Output:** x86 Assembly (Intel Syntax)
 * **Build System:** Make
 
-## 💻 Installation & Usage
+## Installation & Usage
 
 ### 1. Clone the repository
 ```bash
@@ -49,7 +49,7 @@ To remove object files and the executable:
 make clean
 ```
 
-## 📝 Example
+## Example
 
 **Input (input.txt):**
 ```c
